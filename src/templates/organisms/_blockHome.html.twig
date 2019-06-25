@@ -1,19 +1,18 @@
 <div class="block block-home">
 	<div class="block-home__wrapper__1">
-		<h1>A big catcy heading</h1>
+		<h1>Integer Bibendum sit amet arcu vel agustas!!</h1>
 		<div class="block-home__tumbnailbox-container">
 			{% set
 				boxlist=
 				{
-					'box1':{'asset_path':"assetpath",'alt':"animage",'description':"descri[tiomn"},
-					'box2':{'asset_path':"assetpath",'alt':"animage",'description':"descri[tiomn"},
-					'box3':{'asset_path':"assetpath",'alt':"animage",'description':"descri[tiomn"}
+					'box1':{'asset_path':"Himage1.png",'alt':"animage",'description':"Service Name"},
+					'box2':{'asset_path':"Himage2.png",'alt':"animage",'description':"Service Name"},
+					'box3':{'asset_path':"Himage3.png",'alt':"animage",'description':"Service Name"}
 				} 
 			%}
 			{% for box in boxlist %}
-				{% include "_tumbnailBox.html.twig" with box %}
+			{% include "_tumbnailBox.html.twig" with box %}
 			{% endfor %}
 		</div>
 	</div>
 </div>
-

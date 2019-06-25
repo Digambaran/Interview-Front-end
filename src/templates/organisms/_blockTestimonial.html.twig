@@ -1,9 +1,9 @@
 <div class="block block-testimonial">
-      <h3>testimonial</h3>
-      <div class="slider-out">
-        <div class="testimonial__wrapper" id="image_slider">
+  <h1>Testimonials</h1>
+  <div class="slider-out">
+    <div class="testimonial__wrapper" id="image_slider">
 
-          {% set
+      {% set
               testimonyList=
               {
                 'one': 
@@ -18,7 +18,7 @@
                         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
 
-                        'asset_path':"",
+                        'asset_path':"client.png",
                         'client_name':"aname"
                       },
 
@@ -35,7 +35,7 @@
                         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
 
-                        'asset_path':"",
+                        'asset_path':"client.png",
                         'client_name':"aname"
                       },
 
@@ -54,7 +54,7 @@
                         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
 
-                        'asset_path':"",
+                        'asset_path':"client.png",
                         'client_name':"aname"
                       }
                         
@@ -62,8 +62,8 @@
           %}
 
       {% for item in testimonyList %}
-        {% include "../molecules/_testimonyBox.html.twig" with item %}
+      {% include "../molecules/_testimonyBox.html.twig" with item %}
       {% endfor%}
-        </div>
-      </div>
     </div>
+  </div>
+</div>

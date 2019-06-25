@@ -9,18 +9,22 @@
     h1 {
       text-align: center;
       align-self: center;
+      color: white;
     }
     .block-home__tumbnailbox-container {
       display: flex;
+      justify-content: center;
       .tumbnailbox {
         margin: 12px;
-        border: solid red;
+        color: white;
+        border: solid burlywood;
+        border-width: thin;
         border-radius: 0.3em;
         display: flex;
         .wrapper {
           display: flex;
           flex-direction: column;
-          padding: 20px;
+          padding: 2em 3em;
           .imagebox {
             align-self: center;
           }
