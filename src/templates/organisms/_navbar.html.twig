@@ -1,0 +1,17 @@
+<div class="navbar ">
+  <span class="navbar__menuToggle" id="js-nav-toggle">
+    <img src="./assets/ham.png" alt="">
+  </span>
+  <div class="logo-container">
+    <a href="">LOGO</a>
+  </div>
+  <ul class="navbar__menu" id="js-nav-menu">
+   {% include "../molecules/_navlist.html.twig" with {'navlistitems':['About','Services','Solutions','Blog']} %}
+  </ul>
+  <div class="button" role="submit">
+    <a href="#">
+      <img src="./assets/msgmobile.png" alt="msg">
+      <p>Get in Touch</p>
+    </a>
+  </div>
+</div>

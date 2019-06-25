@@ -1,0 +1,36 @@
+.block-about {
+  display: flex;
+  justify-content: center;
+  .block-about__wrapper1 {
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    max-width: 1920px;
+    .grid-about {
+      max-width: 1000px;
+    }
+    .image {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .block-about {
+    .block-about__wrapper1 {
+      display: flex;
+      flex-direction: column;
+      .grid__about {
+        padding: 10px;
+      }
+      .image {
+        display: flex;
+        justify-content: center;
+        img {
+          width: 80%;
+        }
+      }
+    }
+  }
+}

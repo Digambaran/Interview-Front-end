@@ -1,11 +1,163 @@
 @import 'config/**/*.scss';
-
-html {
-  height: 100%;
-  font-size: 16px;
-}
+@import 'blockhome';
+@import 'blockform';
+@import 'blockabout';
+@import 'blocktestimonial';
 
 body {
-  font-size: 100%;
+  margin: 0px;
+  box-sizing: border-box;
+}
+html {
+  margin: 0px;
+}
+
+.block {
+  width: 100%;
+}
+.slgrabbing {
+  cursor: grabbing;
+}
+
+footer {
   display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  background-color: black;
+  //height: 100px;
+  color: white;
+  p {
+    margin: 30px 50px;
+    font-size: 12px;
+  }
+}
+/*--------navbar-----------*/
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  background-color: #121111f2;
+}
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  background-color: #121111f2;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  > a,
+  .navbar__menu__link {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  > .logo-container {
+    order: 1;
+    font-size: 22px;
+    margin-left: 20px;
+    padding: 0.8em;
+  }
+  .navbar__menuToggle {
+    order: 0;
+    position: relative;
+    padding: 0.2em;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 24px;
+  }
+}
+.navbar {
+  width: 100%;
+  max-width: 1920px;
+  .navbar__menu {
+    list-style-type: none;
+    .navbar__menu__link {
+      text-align: center;
+      margin: 15px auto;
+    }
+  }
+  .button {
+    order: 2;
+    margin-right: 1em;
+    border: none;
+    border-radius: 2em;
+    padding: 0.3em 0.8em;
+    a {
+      text-decoration: none;
+      color: white;
+      img {
+        padding-top: 0.2em;
+        display: inline-block;
+      }
+      p {
+        display: none;
+      }
+    }
+  }
+}
+.navbar {
+  display: flex;
+}
+.Factive {
+  display: block;
+}
+.logo-container {
+  a {
+    text-decoration: none;
+  }
+  display: block;
+}
+.navbar__menu {
+  display: none;
+}
+.Nactive {
+  display: none;
+}
+.active {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .navbar {
+    .navbar__menu {
+      order: 1;
+      display: flex;
+      margin-right: 30px;
+      flex-direction: row;
+      .navbar__menu__link {
+        cursor: pointer;
+        margin-right: 30px;
+      }
+    }
+    .button {
+      min-width: 150px;
+      margin-right: 2em;
+      background-color: red;
+      a {
+        display: block;
+        p {
+          font-size: 1.1em;
+          display: inline;
+        }
+      }
+    }
+  }
+  .logo-container {
+    margin-top: 0;
+    width: 50%;
+  }
+
+  .navbar__menuToggle {
+    display: none;
+  }
+
+  .navbar > a:hover,
+  .navbar__menu__link:hover {
+    color: rgba(255, 255, 255, 1);
+  }
 }

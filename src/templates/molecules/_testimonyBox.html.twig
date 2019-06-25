@@ -1,0 +1,15 @@
+ <div class="testimonialBox">
+  <div class="TBoxWrapper">
+    <div class="comment">
+      <blockquote>
+       {{ comment }}
+      </blockquote>
+    </div>
+    <div class="clientDetails">
+      <div class="client-image">
+        {% include '../atoms/_avatar.html.twig' with {'asset_path':"./assets/client.png"} %}
+      </div>
+      <p>{{client_name}}</p>
+    </div>
+  </div>
+</div>

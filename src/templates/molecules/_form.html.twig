@@ -1,0 +1,23 @@
+<form action={{form_action}}>
+
+  {% set
+				fieldList=
+				{
+					'field1':{'field_type':'text','field_id':'fname','field_placeholder':"fullname"},
+					'field2':{'field_type':'email','field_id':'email','field_placeholder':'emailAddress'},
+					'field3':{'field_type':'tel','field_id':'phone','field_placeholder':'phone number'}
+				} 
+	%}
+
+			{% for field in fieldList %}
+				{% include "../atoms/form_field.html.twig" with field %}
+			{% endfor%}
+
+  <textarea
+    id="subject"
+    name="subject"
+    placeholder="Message in brief"
+  ></textarea>
+
+<input type="submit" value="Submit" />
+</form>

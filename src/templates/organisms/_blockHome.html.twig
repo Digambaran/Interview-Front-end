@@ -1,0 +1,19 @@
+<div class="block block-home">
+	<div class="block-home__wrapper__1">
+		<h1>A big catcy heading</h1>
+		<div class="block-home__tumbnailbox-container">
+			{% set
+				boxlist=
+				{
+					'box1':{'asset_path':"assetpath",'alt':"animage",'description':"descri[tiomn"},
+					'box2':{'asset_path':"assetpath",'alt':"animage",'description':"descri[tiomn"},
+					'box3':{'asset_path':"assetpath",'alt':"animage",'description':"descri[tiomn"}
+				} 
+			%}
+			{% for box in boxlist %}
+				{% include "_tumbnailBox.html.twig" with box %}
+			{% endfor %}
+		</div>
+	</div>
+</div>
+
