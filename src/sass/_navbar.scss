@@ -15,16 +15,17 @@
   .navbar__menu {
     list-style-type: none;
     .navbar__menu__link {
+      cursor: pointer;
       text-align: center;
+      text-decoration: none;
       margin: 15px auto;
+      color: rgba(255, 255, 255, 0.7);
+    }
+    .navbar__menu__link:hover {
+      color: rgba(255, 255, 255, 1);
     }
   }
-  > a,
-  .navbar__menu__link {
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.7);
-  }
-  > .logo-container {
+  .logo-container {
     order: 1;
     font-size: 22px;
     margin-left: 20px;
@@ -33,7 +34,6 @@
       text-decoration: none;
       color: aliceblue;
     }
-    display: block;
   }
   .navbar__menuToggle {
     order: 0;

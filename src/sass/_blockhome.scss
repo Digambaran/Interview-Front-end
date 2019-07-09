@@ -6,6 +6,7 @@
     padding: 100px 0px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     h1 {
       text-align: center;
       align-self: center;
@@ -38,11 +39,10 @@
   .block-home {
     .block-home__wrapper__1 {
       .block-home__tumbnailbox-container {
-        max-width: 480px;
         display: flex;
         flex-direction: column;
         .tumbnailbox {
-          margin: 0px;
+          margin: 20px;
           display: flex;
           justify-content: flex-start;
           .wrapper {
